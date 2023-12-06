@@ -6,4 +6,4 @@ services:
       public: './'
     environment:
       - NODE_ENV=production
-    command: 'npx serve -s'
+    command: 'npx serve -s -l 8080' 
