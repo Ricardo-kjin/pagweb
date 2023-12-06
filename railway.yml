@@ -1,0 +1,9 @@
+version: 2
+services:
+  web:
+    image: 'node:14'  # Puedes usar una imagen de Node.js o cualquier imagen que se ajuste a tu necesidad.
+    build:
+      public: './'
+    environment:
+      - NODE_ENV=production
+    command: 'npx serve -s'
